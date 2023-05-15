@@ -1,4 +1,3 @@
-import HText from "@/shared/HText";
 import Logo from "../../assets/Logo.png";
 
 type Props = {};

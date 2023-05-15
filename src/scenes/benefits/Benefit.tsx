@@ -1,6 +1,5 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
@@ -35,8 +34,8 @@ export default function Benefit({
       <p className="my-3">{description}</p>
       <AnchorLink
         className="text-sm font-bold text-red-500 underline hover:text-yellow-500"
-        onClick={() => setSelectedPage(SelectedPage.ConctactUs)}
-        href={`#${SelectedPage.ConctactUs}`}
+        onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+        href={`#${SelectedPage.ContactUs}`}
       >
         <p>Learn More</p>
       </AnchorLink>
