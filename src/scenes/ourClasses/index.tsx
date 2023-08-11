@@ -66,10 +66,13 @@ export default function OurClasses({ setSelectedPage }: Props) {
           <div className="md:w-3/5">
             <HText>OUR CLASSES</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Discover the power within you and unleash your potential! Join our
+              invigorating gym exercise classes and embark on a journey of
+              transformation. Together, we'll sculpt your body, boost your
+              energy, and empower your mind. Embrace the challenge, break
+              barriers, and become the best version of yourself. You've got
+              this! Let's thrive together and make every workout count. Start
+              your fitness journey with us today!
             </p>
           </div>
         </motion.div>

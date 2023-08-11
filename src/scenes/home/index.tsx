@@ -1,11 +1,13 @@
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
+import HomePageText from "@/assets/HomePageLogo.png";
+import HomePageGraphic from "@/assets/ninja.png";
+import Titan from "@/assets/titan.png";
+import Cobra from "@/assets/cobra.png";
+import Sting from "@/assets/sting.png";
+import Delmonte from "@/assets/delmonte.png";
+
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -16,7 +18,10 @@ type Props = {
 function home({ setSelectedPage }: Props) {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section
+      id="home"
+      className="items-center gap-16 bg-gray-20 py-10 md:h-full md:pb-0"
+    >
       {/*Image and main header */}
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
@@ -37,14 +42,14 @@ function home({ setSelectedPage }: Props) {
             }}
           >
             <div className="relative">
-              <div className="before:absolute before:-left-20 before:-top-20 before:z-[-1] md:before:content-evolvetext">
+              <div className="before:absolute before:-left-5 before:-top-10  before:z-[-10] md:before:content-evolvetext">
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              Top-notch Gym. Unmatched Fitness Training Sessions.
+              State-of-the-art Studios for Achieving Your Dream Body Shape.
+              Achieve Your Fitness Goals Today.
             </p>
           </motion.div>
           {/* Actions */}
@@ -73,18 +78,19 @@ function home({ setSelectedPage }: Props) {
         </div>
 
         {/*Image */}
-        <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-end">
+        <div className="relative flex basis-3/5 justify-center overflow-hidden rounded-full md:z-10 md:ml-40 md:mt-16 md:justify-end">
           <img alt="home-pageGraphic" src={HomePageGraphic} />
         </div>
       </motion.div>
       {/*Sponsors */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-red-100 py-10">
-          <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img src={SponsorRedBull} alt="redbull-sponsor" />
-              <img src={SponsorForbes} alt="forbes-sponsor" />
-              <img src={SponsorFortune} alt="fortune-sponsor" />
+        <div className="flex items-center justify-center bg-blue-900">
+          <div className="w-40">
+            <div className="flex justify-center gap-40 pb-5 pt-5">
+              <img src={Titan} alt="titan-sponsor" />
+              <img src={Cobra} alt="cobra-sponsor" />
+              <img src={Sting} alt="sting-sponsor" />
+              <img src={Delmonte} alt="delmonte-sponsor" />
             </div>
           </div>
         </div>
